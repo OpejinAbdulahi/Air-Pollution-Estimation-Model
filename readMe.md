@@ -14,7 +14,7 @@ This methodology enables the estimation of real-time air pollution exposure for 
 
 # Things to do fix if this code is not working on your computer
 This code should work perfectly for anyone who has previously used the arcpy and geopandas libraries on their computer. However, if errors arise due to importing some libraries:
-import arcpy and import geopandas Errors: If you encounter errors related to these imports, it's recommended to use Jupyter Notebook. You can resolve the geopandas issue by executing pip install geopandas. However, resolving the arcpy issue with pip install arcpy might not work. In such cases, refer to this video tutorial https://bit.ly/AirPollution_ for guidance on resolving the arcpy library installation issue specifically within an Anaconda environment.
+import arcpy and import geopandas Errors: If you encounter errors related to these imports, it's recommended to use Jupyter Notebook. You can resolve the geopandas issue by executing pip install geopandas. However, resolving the arcpy issue with pip install arcpy might not work. In such cases, refer to this video tutorial https://bit.ly/air_video_pollution for guidance on resolving the arcpy library installation issue specifically within an Anaconda environment.
 By following these steps, one should be able to address any library-related issues encountered while running this code. Adjustments or additional troubleshooting steps may be necessary based on the specific errors or configurations on your system.
 
 # Further Work
