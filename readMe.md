@@ -8,13 +8,15 @@ GPS Trajectory Data: This dataset comprises the GPS logs of individuals, documen
 Air Pollution Dataset: Collected at one-minute intervals from the PurpleAir network, this dataset corresponds to the date and time of the GPS trajectory data acquisition.
 
 # How it works
-    The model iterates through the timestamps in the air pollution dataset, filtering the air pollution data points for a specific minute. During each iteration, the selected air pollution data points are dynamically converted into a shapefile. Geostatistical analysis, specifically Kriging, is employed to predict the air pollution surface for that minute. Simultaneously, the GPS trajectory data for the same time frame is dynamically overlaid, allowing extraction of individuals' air pollution exposure values for that minute. This process is carried out iteratively across the entire dataset.
+The model iterates through the timestamps in the air pollution dataset, filtering the air pollution data points for a specific minute. During each iteration, the selected air pollution data points are dynamically converted into a shapefile. Geostatistical analysis, specifically Kriging, is employed to predict the air pollution surface for that minute. Simultaneously, the GPS trajectory data for the same time frame is dynamically overlaid, allowing extraction of individuals' air pollution exposure values for that minute. This process is carried out iteratively across the entire dataset.
 
-    This methodology enables the estimation of real-time air pollution exposure for individuals based on their GPS trajectories, allowing for a comprehensive analysis of their exposure levels during the recorded time.
+This methodology enables the estimation of real-time air pollution exposure for individuals based on their GPS trajectories, allowing for a comprehensive analysis of their exposure levels during the recorded time.
 
 # Things to do fix if this code is not working on your computer
-Honestly, this code should work for anyone who have been using arcpy and geopandas libraries on their computer. 
-Otherwise, "import arcpy" and "import geopandas" migh be throwing error. in this case, I recommend using jupyter notebook. "pip install geopandas" should resolve the issue with geopandas, however "pip install arcpy" might seem not to resolve the issue with arcpy. Hence, this video " https://bit.ly/Arcpy_Anaconda "could help resolve it in anaconda. 
+This code should work perfectly for anyone who has previously used the arcpy and geopandas libraries on their computer. However, if errors arise due to importing some libraries:
+import arcpy and import geopandas Errors: If you encounter errors related to these imports, it's recommended to use Jupyter Notebook. You can resolve the geopandas issue by executing pip install geopandas. However, resolving the arcpy issue with pip install arcpy might not work. In such cases, refer to this video tutorial: Arcpy Installation via Anaconda for guidance on resolving the arcpy library installation issue specifically within an Anaconda environment.
+By following these steps, one should be able to address any library-related issues encountered while running this code. Adjustments or additional troubleshooting steps may be necessary based on the specific errors or configurations on your system.
+
 
 
 #
